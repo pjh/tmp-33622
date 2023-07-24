@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package fruit;
+
+service FruitService {
+  rpc GetBanana(GetBananaRequest) returns (GetBananaResponse);
+}
+
+message GetBananaRequest {
+  optional string name = 1;
+}
+
+message GetBananaResponse {}
